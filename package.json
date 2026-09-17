@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
-	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"name": "obsidian-pic2note",
+	"version": "0.1.0",
+	"description": "Generate Markdown notes from images in Obsidian",
 	"main": "main.js",
 	"type": "module",
 	"scripts": {
@@ -13,17 +13,21 @@
 	"keywords": [],
 	"license": "0-BSD",
 	"devDependencies": {
+		"@eslint/js": "9.30.1",
 		"@types/node": "^16.11.6",
 		"esbuild": "0.25.5",
 		"eslint-plugin-obsidianmd": "0.1.9",
 		"globals": "14.0.0",
+		"jiti": "2.6.1",
 		"tslib": "2.4.0",
 		"typescript": "^5.8.3",
-		"typescript-eslint": "8.35.1",
-		"@eslint/js": "9.30.1",
-		"jiti": "2.6.1"
+		"typescript-eslint": "8.35.1"
 	},
 	"dependencies": {
-		"obsidian": "latest"
+		"@openai/agents": "^0.11.5",
+		"js-sha3": "^0.9.3",
+		"obsidian": "latest",
+		"openai": "^6.39.0",
+		"zod": "^4.4.3"
 	}
 }
